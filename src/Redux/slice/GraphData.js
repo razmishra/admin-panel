@@ -4,30 +4,7 @@ import axios from "axios";
 export const fetchGraphData = createAsyncThunk(
   "fetchGraphData",
   async (timePeriod) => {
-    // const options = {
-    //   method: "GET",
-    //   url: process.env.REACT_APP_URL,
-    //   params: {
-    //     referenceCurrencyUuid: process.env.REACT_APP_referenceCurrencyUui,
-    //     timePeriod: timePeriod,
-    //   },
-    //   headers: {
-    //     "X-RapidAPI-Key": process.env.REACT_APP_APIKEY,
-    //     "X-RapidAPI-Host": process.env.REACT_APP_HOST,
-    //   },
-    // };
-    // const response = await axios.request(options);
-    // return response.data;
-    // const response = await fetch("http://localhost:3001/",{
-    //     method:"GET",
-    //     headers:{
-    //         'Content-type':'application/json'
-    //     },
-    //     body:{
-    //         timePeriod:timePeriod
-    //     }
-    // })
-    const response = await axios.get("http://localhost:3001", {
+    const response = await axios.get("http://localhost:8000", {
       params: {
         timePeriod: timePeriod,
       },
