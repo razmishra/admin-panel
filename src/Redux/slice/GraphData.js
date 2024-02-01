@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchGraphData = createAsyncThunk(
   "fetchGraphData",
   async (timePeriod) => {
-    const response = await axios.get("http://localhost:8000", {
+    const response = await axios.get("https://admin-backend-xcub.onrender.com/", {
       params: {
         timePeriod: timePeriod,
       },
