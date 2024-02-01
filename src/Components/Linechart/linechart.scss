@@ -1,0 +1,33 @@
+.chart{
+    flex: 3;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    .top{
+        display: flex;
+        align-items: center;
+        color:#6A6A6A;
+        justify-content: space-between;
+        .button{
+            margin: 2px;
+            button{
+                margin: 2px;
+                background-color: #F9F4F0 ;
+                border-radius: 10px;
+                border: none;
+                font-size: 10px;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #634832;
+                    color: white;
+                }
+
+            }
+        }
+    }
+
+}

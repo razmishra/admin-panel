@@ -1,0 +1,40 @@
+.status {
+  padding: 5px;
+  display: flex;
+  border-radius: 33px;
+  justify-content: center;
+
+  &.Paid {
+    background-color: #ddf2e2;
+    color: #79ac85;
+  }
+  &.Pending {
+    background-color: #fef2eb;
+    color: #d4a681;
+  }
+  &.Overdue {
+    background-color: #fde7e7;
+    color: #c96e6e;
+  }
+}
+
+.download {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  justify-content: start;
+  gap: 3px;
+  border: 2px solid #e7c8a9;
+  border-radius: 6px;
+  max-width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #e7c8a9;
+  cursor: pointer;
+}
+
+.head {
+  font-size: 15px;
+  font-weight: bold;
+  color: #634832;
+}

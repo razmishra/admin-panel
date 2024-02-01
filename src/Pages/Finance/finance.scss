@@ -1,0 +1,123 @@
+.finance {
+  display: flex;
+  width: 100%;
+  background-color: #f9f4f0;
+  .body-content {
+    margin: 25px 20px;
+  }
+  .wallet-card {
+    flex: 6;
+    margin-bottom: 1rem;
+  }
+
+  .username {
+    color: #634832;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left: 2rem;
+  }
+
+  .walletList {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .card-content {
+    margin-left: 2rem;
+    margin-top: 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: white;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    .wallet {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+
+      .right {
+        margin-left: 20px;
+        flex: 1;
+        .walleticon {
+          color: #a98f7a;
+          padding: 2px;
+          background-color: #f9f4f0;
+        }
+      }
+      .left {
+        flex: 3;
+        div {
+          font-weight: 400;
+          color: #636363;
+        }
+        span {
+          color: #634832;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .withdraw-button-container {
+      position: relative;
+      border: none;
+      outline: none;
+      margin-left: 20px;
+      margin-top: 8px;
+      margin-right: 10px;
+      .withdraw-button {
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #634832;
+        color: white;
+        display: flex;
+        padding: 3px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  .transcation {
+    margin-top: 2rem;
+    .ttext {
+      color: #634832;
+      font-weight: bolder;
+      font-size: 28px;
+      margin-left: 2rem;
+    }
+  }
+
+  .transcation-rows {
+    margin-left: 1.9rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .t-heading {
+      padding: 0.9rem;
+      border-radius: 10px;
+      color: #634832;
+      font-weight: bolder;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      flex: 6;
+    }
+
+  }
+}
+
+.t-rows{
+  margin-left: 1.5rem;
+  margin-top: 10px;
+}

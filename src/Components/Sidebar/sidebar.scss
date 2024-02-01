@@ -1,0 +1,107 @@
+.sidebar{
+    flex:1;
+    border-right: 0.5px solid rgb(230,227,227);
+    min-height: 100vh;
+    background-color:#FBEBDB;
+    min-width: 228px;
+    display: flex;
+    flex-direction: column;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 30px;
+            font-weight: bolder;
+            color:#634832;
+        }
+    }
+    .center{
+        padding-left: 10px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .title{
+                font-size: 15px;
+                font-weight: bold;
+                color: #B09883;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #634832;
+                    border-radius: 5px;
+                }
+            }
+            .icons{
+                font-size: large;
+                margin-right: 8px;
+                fill: #A98F7A ;
+                // &:hover{
+                //     fill: #FFFFFF;
+                // }
+
+            }
+            span{
+                font-size: 18px;
+                font-weight: 600;
+                color: #A98F7A;
+                margin-left: 10px;
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+          
+        }
+    }
+
+    .bottom{
+        height: 10rem;
+        margin-top: 14rem;
+        margin-right: 1rem;
+        
+    }
+    .walletList{
+        background-color: white;
+        border-radius: 10px;
+    }
+    .wallet{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+
+        .right{
+          margin-left: 1rem;
+          flex: 1;
+          .walleticon{
+            color: #A98F7A;
+            padding: 2px;
+            background-color: #F9F4F0;
+          }
+        }
+        .left{
+            flex: 3;
+            div{
+                font-weight: 400;
+                color:#636363;
+            }
+            span{
+                color: #634832;
+                font-weight: bold;
+            }
+        }
+    }
+    .logout{
+        margin-top: 1.5rem;
+    }
+   
+}
